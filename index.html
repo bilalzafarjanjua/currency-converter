@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currenct converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency converter</h1>
+      <div class="inputContainer">
+        <div class="fields">
+          <p>Entre Amount</p>
+          <input type="text" name="" id="in-cur" />
+        </div>
+      </div>
+      <div class="convert-container">
+        <div class="from my-converter">
+          <p>From</p>
+          <div class="from-select select">
+            <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+            <select name="from" id="" class="dropdown"></select>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+        <div class="to my-converter">
+          <p>To</p>
+          <div class="to-select select">
+            <img src="https://flagsapi.com/PK/flat/64.png" alt="" />
+            <select name="to" id="to" class="dropdown"></select>
+          </div>
+        </div>
+      </div>
+
+      <p class="myPara"></p>
+      <div class="btn">
+        <button class="my-button">get exchange rate</button>
+      </div>
+    </div>
+
+    <script src="/list.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -44,7 +44,7 @@ async function checkRate() {
   toCurrency = toslect.value.toLowerCase();
   // console.log(fromCurrency + "" + toCurrency);
   const baseUrl = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrency}.json`;
-  let val = amount.value;
+    val = parseFloat(amount.value);
   if (val <= 0 || isNaN(val)) {
     amount.value = 1;
   } else {
@@ -61,6 +61,7 @@ async function checkRate() {
                paragraph.innerHTML = "Error fetching exchange rate"  }
   }
 }
+
 
 
 

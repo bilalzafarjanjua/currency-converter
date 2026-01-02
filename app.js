@@ -51,10 +51,12 @@ async function checkRate() {
       const response = await fetch(baseUrl);
       const data = await response.json();
       const rate = data[fromCurrency][toCurrency];
-      const totalConversion = Math.floor(rate * amount.value);
+      const totalConversion = rate * amount.value;
+      const fullAmount = totalConversion.toFixed(4);
       paragraph.innerHTML = `${
         amount.value
-      }${fromCurrency.toUpperCase()} = ${totalConversion}${toCurrency.toUpperCase()}`;
+      }${fromCurrency.toUpperCase()} = ${fullAmount}${toCurrency.toUpperCase()}`;
     } catch {}
   }
 }
+

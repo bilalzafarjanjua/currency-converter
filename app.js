@@ -56,7 +56,9 @@ async function checkRate() {
       paragraph.innerHTML = `${
         amount.value
       }${fromCurrency.toUpperCase()} = ${fullAmount}${toCurrency.toUpperCase()}`;
-    } catch {}
+    } catch(err) { console.error(error);
+               paragraph.innerHTML = "Error fetching exchange rate"  }
   }
 }
+
 
